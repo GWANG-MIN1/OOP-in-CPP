@@ -9,7 +9,7 @@ private:
 
 public:
     // 이름을 설정하는 함수 (for 반복문으로 직접 구현)
-    void setName(const char* newName) {
+    void setName(const char* newName) { //배열을 함수 인자로 보낼때는 포인터로 전달됨 따라서 const char * 필요하다.
         
         for (int i = 0; i < 14; i++) {
             name[i] = newName[i]; // 한 글자씩 복사합니다.
